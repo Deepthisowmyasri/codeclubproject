@@ -1,0 +1,16 @@
+4.REVERSE DIGITS
+----------------
+class Solution
+{
+    public long reverse_digit(long n)
+    {
+        long rv_dig=0;
+        while (n!=0)
+        {
+            long dig=n%10;
+            rv_dig=rv_dig*10+dig;
+            n=n/10;
+        }
+        return rv_dig;
+    }
+}

@@ -1,0 +1,14 @@
+20.POWER OF POW |EVEN NUMBER
+----------------------------
+class Solution
+{
+    public long sum_of_square_evenNumbers(long n)
+    {
+        long sum = 0;
+        for (int i=1;i<=n;i++) {
+            long even= 2*i;
+            sum +=even*even;
+        }
+        return sum;
+    }
+}

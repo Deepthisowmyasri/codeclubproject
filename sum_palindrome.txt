@@ -1,0 +1,24 @@
+6.SUM OF DIGIT IS PALINDROME OR NOT
+-----------------------------------
+class Solution {
+    int isDigitSumPalindrome(int n)
+    {
+         int num=n,rev=0,sum=0;
+        while (n!= 0)
+        {
+            int dig = n%10;
+            sum += dig;
+            n=n/10;
+        }
+        int sum1=sum;
+         while (sum1!=0)
+         {
+            int dig= sum1%10;
+            rev=rev*10+dig;
+            sum1/= 10;
+        }
+
+        return (sum1==rev) ? 1 : 0;
+    }
+
+    }

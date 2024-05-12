@@ -1,0 +1,8 @@
+18.SIMPLE INTEREST
+-------------------
+class Solution {
+    double simpleInterest(int P, int R, int T) {
+       double Simple_interest=(P*T*R)/100;
+       return Simple_interest;
+    }
+}

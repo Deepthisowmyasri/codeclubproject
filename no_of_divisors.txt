@@ -1,0 +1,15 @@
+19.NUMBER OF DIVISORS
+---------------------
+class Solution{
+    static long count_divisors(int N){
+       long count=0;
+       for(int i=1;i<=N;i++)
+       {
+       if (i%3==0 && N%i==0)
+       {
+           count+=1;
+       }
+    }
+    return count;
+    }
+}

@@ -1,0 +1,7 @@
+13.THE DICE PROBLEM
+--------------------
+class Solution{
+    static int oppositeFaceOfDice(int N){
+        return (7-N);
+    }
+}

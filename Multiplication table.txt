@@ -1,0 +1,15 @@
+10.MULTIPLICATION TABLE
+-----------------------
+class Solution{
+    static ArrayList<Integer> getTable(int N){
+        ArrayList<Integer> table = new ArrayList<>();
+        for(int i=N;i<=N;i++)
+        {
+            for(int j=1;j<=i+1;j++)
+            {
+             table.add(i*j);
+            }
+        }
+        return table;
+    }
+}

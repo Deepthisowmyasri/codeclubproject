@@ -1,0 +1,8 @@
+1.SUM OF SERIES
+----------------
+class Solution {
+    public static long seriesSum(int n) {
+        long sum = (n*(n+1))/2;
+        return sum; 
+       }
+    }

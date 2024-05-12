@@ -1,0 +1,33 @@
+15.SUM PALINDROME
+-----------------
+class Solution {
+    static long isSumPalindrome(long n)
+    {
+        long num= n;
+        long rev= 0;
+        while (n!= 0) {
+            long dig= n % 10;
+            rev = rev*10+dig;
+            n/= 10;
+        }
+        long sum = num+rev;
+        long temp = sum;
+        long palindrome = 0;
+        while (temp != 0)
+        {
+            long dig= temp % 10;
+            palindrome=palindrome*10+dig;
+            temp/=10;
+        }
+        
+        if (sum==palindrome) 
+        {
+            return sum;
+        }
+        else {
+            return -1;
+        }
+    }
+        
+        
+    }

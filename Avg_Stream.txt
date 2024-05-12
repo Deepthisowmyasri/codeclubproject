@@ -1,0 +1,25 @@
+14.AVERAGE IN A STREAM
+----------------------
+class Solution {
+    float[] streamAvg(int[] arr, int n) {
+        if (n <= 0 || arr == null || arr.length == 0) {
+            return new float[0];
+        }
+
+        float[] averages = new float[n];
+        int sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            sum += arr[i];
+            averages[i] = (float) sum / (i + 1);
+        }
+
+        for (int i = n; i < arr.length; i++) {
+            sum += arr[i] - arr[i - n];
+            averages[i] = (float) sum / n;
+        }
+
+        return averages;
+    }
+
+}
